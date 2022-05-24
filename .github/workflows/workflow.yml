@@ -21,8 +21,7 @@ env:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   loadTest:
-    name: Load Test
-    needs: build-and-deploy
+    name: Load Test   
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitHub Actions 
